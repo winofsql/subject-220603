@@ -21,3 +21,15 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 ```
+
+```html
+    <div class="table-responsive">
+        <table class="table table-hover">
+            <tbody id="tbl">
+                <tr>
+                    <td><td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+```
