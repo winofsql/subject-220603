@@ -15,15 +15,15 @@
     </style>
 
     <script>
-        jQuery(function(){
-            jQuery("#tbl tr").on("click",function(){
+        jQuery(function () {
+            jQuery("#tbl tr").on("click", function () {
                 // 社員コード
                 console.log(jQuery(this).find("td").eq(0));
                 var scode = jQuery(this).find("td").eq(0).text();
                 jQuery("#scode").val(scode);
 
                 // 氏名
-                var sname = jQuery(this).find("td").eq(1).text();
+                var sname = jQuery(this).find("td").eq(2).text();
                 jQuery("#sname").val(sname);
 
             });
@@ -39,8 +39,17 @@
 
 <body>
     <div class="m-4">
-        <input type="text" id="scode" class="me-4">
-        <input type="text" id="sname">
+        <form>
+            <!-- 社員コード -->
+            <input required pattern="[0-9]+"
+                type="text" id="scode" class="me-4">
+
+            <!-- フリガナ -->
+            <input pattern="[\u30A0-\u30FF ]+"
+                type="text" id="sname" required>
+
+            <input type="submit" value="送信">
+        </form>
     </div>
 
     <div class="table-responsive">
