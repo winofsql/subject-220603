@@ -66,3 +66,8 @@
 - ### 3) 要素  <= <要素></要素>
 - ### 4) DOM オブジェクト
 
+### GUID 取得
+```
+Set TypeLib = CreateObject("Scriptlet.TypeLib")
+WScript.Echo TypeLib.Guid
+```
