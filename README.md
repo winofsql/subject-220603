@@ -71,3 +71,8 @@
 Set TypeLib = CreateObject("Scriptlet.TypeLib")
 WScript.Echo TypeLib.Guid
 ```
+
+### Windows Namespace
+```
+HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Desktop\NameSpace
+```
