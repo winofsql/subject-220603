@@ -43,3 +43,16 @@
             });
         });
 ```
+
+### 値の取得
+```js
+                // 社員コード
+                console.log($(this).find("td").eq(0));
+                var scode = $(this).find("td").eq(0).text();
+                $("#scode").val(scode);
+
+                // 氏名
+                var sname = $(this).find("td").eq(1).text();
+                $("#sname").val(sname);
+
+```
