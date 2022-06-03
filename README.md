@@ -34,3 +34,12 @@
         </table>
     </div>
 ```
+
+### 行のイベント( jQuery )
+```js
+        $(function(){
+            $("#tbl tr").on("click",function(){
+                console.log(this);
+            });
+        });
+```
