@@ -22,6 +22,7 @@
 </head>
 ```
 
+### table のレスポンシブ対応
 ```html
     <div class="table-responsive">
         <table class="table table-hover">
