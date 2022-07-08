@@ -1,3 +1,4 @@
+-- https://winofsql.jp/src/database/winofsql/?src=sql-test
 -- 6
 -- 社員マスタを使用して、氏名と支給額という列名で、全社員を表示しなさい
 SELECT
